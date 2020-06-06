@@ -1,6 +1,14 @@
 local RobloxVRidge = Instance.new("ScreenGui")
-local Header = Instance.new("TextLabel")
+local DiologueBox = Instance.new("TextLabel")
+local Content = Instance.new("Frame")
+local Confirm = Instance.new("TextButton")
+local Proceed_Roundify_12px = Instance.new("ImageLabel")
+local Cancel = Instance.new("TextButton")
+local Proceed_Roundify_12px_2 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
 local Round = Instance.new("ImageLabel")
+local CoreWindow = Instance.new("TextLabel")
+local Round_2 = Instance.new("ImageLabel")
 local Loader = Instance.new("Frame")
 local PI = Instance.new("TextLabel")
 local ClientVersion = Instance.new("TextLabel")
@@ -9,7 +17,15 @@ local PI_2 = Instance.new("TextLabel")
 local Author = Instance.new("TextLabel")
 local Reddit = Instance.new("TextLabel")
 local Proceed = Instance.new("TextButton")
-local Proceed_Roundify_12px = Instance.new("ImageLabel")
+local Proceed_Roundify_12px_3 = Instance.new("ImageLabel")
+local ConfigMenu = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local Proceed_Roundify_12px_4 = Instance.new("ImageLabel")
+local window = Instance.new("Folder")
+local Close = Instance.new("ImageButton")
+local Minimize = Instance.new("ImageButton")
+local Hide = Instance.new("ImageButton")
+local Show = Instance.new("ImageButton")
 
 --Properties:
 
@@ -17,34 +33,136 @@ RobloxVRidge.Name = "RobloxVRidge"
 RobloxVRidge.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 RobloxVRidge.DisplayOrder = 999999999
 
-Header.Name = "Header"
-Header.Parent = RobloxVRidge
-Header.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Header.BackgroundTransparency = 1.000
-Header.BorderSizePixel = 0
-Header.Position = UDim2.new(0.5, -150, 0.400000006, -15)
-Header.Size = UDim2.new(0, 300, 0, 30)
-Header.ZIndex = 2
-Header.Font = Enum.Font.SourceSansLight
-Header.Text = "Roblox VRidge"
-Header.TextColor3 = Color3.fromRGB(255, 255, 255)
-Header.TextSize = 20.000
+DiologueBox.Name = "DiologueBox"
+DiologueBox.Parent = RobloxVRidge
+DiologueBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DiologueBox.BackgroundTransparency = 1.000
+DiologueBox.BorderSizePixel = 0
+DiologueBox.Position = UDim2.new(0.5, -150, 0.449999988, -15)
+DiologueBox.Size = UDim2.new(0, 300, 0, 30)
+DiologueBox.Visible = false
+DiologueBox.ZIndex = 2
+DiologueBox.Font = Enum.Font.SourceSansLight
+DiologueBox.Text = "Roblox VRidge"
+DiologueBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiologueBox.TextSize = 20.000
+
+Content.Name = "Content"
+Content.Parent = DiologueBox
+Content.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Content.BorderSizePixel = 0
+Content.Position = UDim2.new(0, 0, 0, 30)
+Content.Size = UDim2.new(1, 0, 0, 150)
+
+Confirm.Name = "Confirm"
+Confirm.Parent = Content
+Confirm.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Confirm.BackgroundTransparency = 1.000
+Confirm.BorderSizePixel = 0
+Confirm.Position = UDim2.new(0, 15, 1, -50)
+Confirm.Size = UDim2.new(0, 125, 0, 35)
+Confirm.ZIndex = 2
+Confirm.Font = Enum.Font.SourceSans
+Confirm.Text = "Confirm"
+Confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Confirm.TextSize = 25.000
+
+Proceed_Roundify_12px.Name = "Proceed_Roundify_12px"
+Proceed_Roundify_12px.Parent = Confirm
+Proceed_Roundify_12px.Active = true
+Proceed_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Proceed_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Proceed_Roundify_12px.BackgroundTransparency = 1.000
+Proceed_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Proceed_Roundify_12px.Selectable = true
+Proceed_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Proceed_Roundify_12px.Image = "rbxassetid://3570695787"
+Proceed_Roundify_12px.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Proceed_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Proceed_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Proceed_Roundify_12px.SliceScale = 0.120
+
+Cancel.Name = "Cancel"
+Cancel.Parent = Content
+Cancel.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Cancel.BackgroundTransparency = 1.000
+Cancel.BorderSizePixel = 0
+Cancel.Position = UDim2.new(1, -140, 1, -50)
+Cancel.Size = UDim2.new(0, 125, 0, 35)
+Cancel.ZIndex = 2
+Cancel.Font = Enum.Font.SourceSans
+Cancel.Text = "Cancel"
+Cancel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cancel.TextSize = 25.000
+
+Proceed_Roundify_12px_2.Name = "Proceed_Roundify_12px"
+Proceed_Roundify_12px_2.Parent = Cancel
+Proceed_Roundify_12px_2.Active = true
+Proceed_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Proceed_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Proceed_Roundify_12px_2.BackgroundTransparency = 1.000
+Proceed_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Proceed_Roundify_12px_2.Selectable = true
+Proceed_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+Proceed_Roundify_12px_2.Image = "rbxassetid://3570695787"
+Proceed_Roundify_12px_2.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Proceed_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+Proceed_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Proceed_Roundify_12px_2.SliceScale = 0.120
+
+TextLabel.Parent = Content
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 0, 100)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "{text}"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+TextLabel.TextWrapped = true
 
 Round.Name = "Round"
-Round.Parent = Header
+Round.Parent = DiologueBox
 Round.AnchorPoint = Vector2.new(0.5, 0.5)
 Round.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Round.BackgroundTransparency = 1.000
 Round.Position = UDim2.new(0.5, 0, 1, 0)
 Round.Size = UDim2.new(1, 0, 2, 0)
+Round.ZIndex = 0
 Round.Image = "rbxassetid://3570695787"
 Round.ImageColor3 = Color3.fromRGB(30, 30, 30)
 Round.ScaleType = Enum.ScaleType.Slice
 Round.SliceCenter = Rect.new(100, 100, 100, 100)
 Round.SliceScale = 0.120
 
+CoreWindow.Name = "CoreWindow"
+CoreWindow.Parent = RobloxVRidge
+CoreWindow.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CoreWindow.BackgroundTransparency = 1.000
+CoreWindow.BorderSizePixel = 0
+CoreWindow.Position = UDim2.new(0.5, -150, 0.400000006, -15)
+CoreWindow.Size = UDim2.new(0, 300, 0, 30)
+CoreWindow.ZIndex = 2
+CoreWindow.Font = Enum.Font.SourceSansLight
+CoreWindow.Text = "Roblox VRidge"
+CoreWindow.TextColor3 = Color3.fromRGB(255, 255, 255)
+CoreWindow.TextSize = 20.000
+
+Round_2.Name = "Round"
+Round_2.Parent = CoreWindow
+Round_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Round_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Round_2.BackgroundTransparency = 1.000
+Round_2.Position = UDim2.new(0.5, 0, 1, 0)
+Round_2.Size = UDim2.new(1, 0, 2, 0)
+Round_2.Image = "rbxassetid://3570695787"
+Round_2.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Round_2.ScaleType = Enum.ScaleType.Slice
+Round_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Round_2.SliceScale = 0.120
+
 Loader.Name = "Loader"
-Loader.Parent = Header
+Loader.Parent = CoreWindow
 Loader.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Loader.BorderSizePixel = 0
 Loader.Position = UDim2.new(0, 0, 0, 30)
@@ -69,7 +187,7 @@ ClientVersion.BackgroundTransparency = 1.000
 ClientVersion.Position = UDim2.new(0, 0, 0, 30)
 ClientVersion.Size = UDim2.new(1, 0, 0, 20)
 ClientVersion.Font = Enum.Font.SourceSans
-ClientVersion.Text = "RobloxVRidge Client Version:      a0.1.0"
+ClientVersion.Text = "RobloxVRidge Client Version:      a0.1.2"
 ClientVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
 ClientVersion.TextSize = 14.000
 
@@ -133,27 +251,107 @@ Proceed.Text = "Proceed"
 Proceed.TextColor3 = Color3.fromRGB(255, 255, 255)
 Proceed.TextSize = 25.000
 
-Proceed_Roundify_12px.Name = "Proceed_Roundify_12px"
-Proceed_Roundify_12px.Parent = Proceed
-Proceed_Roundify_12px.Active = true
-Proceed_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
-Proceed_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Proceed_Roundify_12px.BackgroundTransparency = 1.000
-Proceed_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
-Proceed_Roundify_12px.Selectable = true
-Proceed_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
-Proceed_Roundify_12px.Image = "rbxassetid://3570695787"
-Proceed_Roundify_12px.ImageColor3 = Color3.fromRGB(75, 75, 75)
-Proceed_Roundify_12px.ScaleType = Enum.ScaleType.Slice
-Proceed_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
-Proceed_Roundify_12px.SliceScale = 0.120
+Proceed_Roundify_12px_3.Name = "Proceed_Roundify_12px"
+Proceed_Roundify_12px_3.Parent = Proceed
+Proceed_Roundify_12px_3.Active = true
+Proceed_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Proceed_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Proceed_Roundify_12px_3.BackgroundTransparency = 1.000
+Proceed_Roundify_12px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Proceed_Roundify_12px_3.Selectable = true
+Proceed_Roundify_12px_3.Size = UDim2.new(1, 0, 1, 0)
+Proceed_Roundify_12px_3.Image = "rbxassetid://3570695787"
+Proceed_Roundify_12px_3.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Proceed_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+Proceed_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+Proceed_Roundify_12px_3.SliceScale = 0.120
+
+ConfigMenu.Name = "ConfigMenu"
+ConfigMenu.Parent = CoreWindow
+ConfigMenu.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ConfigMenu.BorderSizePixel = 0
+ConfigMenu.Position = UDim2.new(0, 0, 0, 30)
+ConfigMenu.Size = UDim2.new(1, 0, 0, 200)
+ConfigMenu.Visible = false
+
+Execute.Name = "Execute"
+Execute.Parent = ConfigMenu
+Execute.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Execute.BackgroundTransparency = 1.000
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.5, -100, 0.5, -17)
+Execute.Size = UDim2.new(0, 200, 0, 35)
+Execute.ZIndex = 2
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Enter VR Mode"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 25.000
+
+Proceed_Roundify_12px_4.Name = "Proceed_Roundify_12px"
+Proceed_Roundify_12px_4.Parent = Execute
+Proceed_Roundify_12px_4.Active = true
+Proceed_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Proceed_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Proceed_Roundify_12px_4.BackgroundTransparency = 1.000
+Proceed_Roundify_12px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Proceed_Roundify_12px_4.Selectable = true
+Proceed_Roundify_12px_4.Size = UDim2.new(1, 0, 1, 0)
+Proceed_Roundify_12px_4.Image = "rbxassetid://3570695787"
+Proceed_Roundify_12px_4.ImageColor3 = Color3.fromRGB(75, 75, 75)
+Proceed_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+Proceed_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+Proceed_Roundify_12px_4.SliceScale = 0.120
+
+window.Name = "window"
+window.Parent = CoreWindow
+
+Close.Name = "Close"
+Close.Parent = window
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(1, -20, 0.5, -7)
+Close.Size = UDim2.new(0, 15, 0, 15)
+Close.Image = "rbxassetid://200182847"
+Close.ImageColor3 = Color3.fromRGB(255, 100, 100)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = window
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 1.000
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(1, -40, 0.5, -7)
+Minimize.Size = UDim2.new(0, 15, 0, 15)
+Minimize.Image = "rbxassetid://200182847"
+Minimize.ImageColor3 = Color3.fromRGB(255, 255, 100)
+
+Hide.Name = "Hide"
+Hide.Parent = window
+Hide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hide.BackgroundTransparency = 1.000
+Hide.BorderSizePixel = 0
+Hide.Position = UDim2.new(1, -60, 0.5, -7)
+Hide.Size = UDim2.new(0, 15, 0, 15)
+Hide.Image = "rbxassetid://200182847"
+Hide.ImageColor3 = Color3.fromRGB(100, 100, 100)
+
+Show.Name = "Show"
+Show.Parent = window
+Show.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Show.BackgroundTransparency = 1.000
+Show.BorderSizePixel = 0
+Show.Position = UDim2.new(1, -20, 0.5, -7)
+Show.Size = UDim2.new(0, 15, 0, 15)
+Show.Visible = false
+Show.Image = "rbxassetid://200182847"
+Show.ImageColor3 = Color3.fromRGB(100, 255, 100)
 
 -- Scripts:
 
-local function KPFUW_fake_script() -- Header.HeaderCore 
-	local script = Instance.new('LocalScript', Header)
+local function TPXGGAE_fake_script() -- DiologueBox.DiologueBoxDrag 
+	local script = Instance.new('LocalScript', DiologueBox)
 
-	--Drag
+	--   Drag Header   --
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -193,5 +391,173 @@ local function KPFUW_fake_script() -- Header.HeaderCore
 			update(input)
 		end
 	end)
+	--   End Drag Header   --
 end
-coroutine.wrap(KPFUW_fake_script)()
+coroutine.wrap(TPXGGAE_fake_script)()
+local function RBXWUF_fake_script() -- RobloxVRidge.Core 
+	local script = Instance.new('LocalScript', RobloxVRidge)
+
+	--   Drag Header   --
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent.CoreWindow
+	local db = script.Parent.DiologueBox
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	--   End Drag Header   --
+	
+	--   Pass Loader   --
+	gui:WaitForChild("Loader"):WaitForChild("Proceed").MouseButton1Click:Connect(function()
+		gui:WaitForChild("Loader").Visible = false
+		gui:WaitForChild("ConfigMenu").Visible = true
+	end)
+	--   End Pass Loader   --
+end
+coroutine.wrap(RBXWUF_fake_script)()
+local function JDSL_fake_script() -- RobloxVRidge.DiologueCore 
+	local script = Instance.new('LocalScript', RobloxVRidge)
+
+	local gui = script.Parent:WaitForChild("CoreWindow")
+	local db = script.Parent:WaitForChild("DiologueBox")
+	
+	--   Exit Program   --
+	gui.window.Close.MouseButton1Click:Connect(function()
+		db.Position = UDim2.new(0.5,-150,0.45,-15)
+		gui.Visible = false
+		db.Content.TextLabel.Text = "Are You Sure That You Want To Exit Roblox VRidge?\nThis Will Close Roblox!"
+		db.Visible = true
+		
+		--Agree To Exit
+		db.Content.Confirm.MouseButton1Click:Connect(function()
+			db.Visible = false
+			game.Players.LocalPlayer:kick("\n\n\nExited Roblox VRidge\n\n")
+		end)
+		
+		--Disagree To Exit
+		db.Content.Cancel.MouseButton1Click:Connect(function()
+			db.Visible = false
+			gui.Visible = true
+			gui.Position = UDim2.new(0.5,-150,0.4,-15)
+		end)
+		
+		
+	end)
+	--   End Exit Program   --
+	
+	--   Hide Program   --
+	gui.window.Hide.MouseButton1Click:Connect(function()
+		db.Position = UDim2.new(0.5,-150,0.45,-15)
+		gui.Visible = false
+		db.Content.TextLabel.Text = "Are You Sure That You Want To Hide Roblox VRidge?\nThe Program Will Continue To Run In The Background."
+		db.Visible = true
+		
+		--Agree To Hide
+		db.Content.Confirm.MouseButton1Click:Connect(function()
+			db.Visible = false
+		end)
+		
+		--Disagree To Hide
+		db.Content.Cancel.MouseButton1Click:Connect(function()
+			db.Visible = false
+			gui.Visible = true
+			gui.Position = UDim2.new(0.5,-150,0.4,-15)
+		end)
+		
+		
+	end)
+	--   End Hide Program   --
+	
+	--   Minimize Program   --
+	gui.window.Minimize.MouseButton1Click:Connect(function()
+		db.Position = UDim2.new(0.5,-150,0.45,-15)
+		gui.Visible = false
+		db.Content.TextLabel.Text = "Are You Sure That You Want To Minimize Roblox VRidge?\nThe Program Window Will Shrink."
+		db.Visible = true
+		min = true
+		
+		--Agree To Minimize
+		db.Content.Confirm.MouseButton1Click:Connect(function()
+			if min then
+				db.Visible = false
+				gui.Visible = true
+				gui.ConfigMenu.Visible = false
+				gui.Loader.Visible = false
+				
+				--Tweak Box Size
+				gui.Round.Size = UDim2.new(1,0,1,0)
+				gui.Round.Position = UDim2.new(0.5,0,0.5,0)
+				gui.Size = UDim2.new(0,150,0,30)
+				
+				--Hide Buttons
+				gui.window.Minimize.Visible = false
+				gui.window.Close.Visible = false
+				gui.window.Hide.Visible = false
+				gui.window.Show.Visible = true
+				
+				min = false
+			end
+		end)
+		
+		--Disagree To Minimize
+		db.Content.Cancel.MouseButton1Click:Connect(function()
+			db.Visible = false
+			gui.Visible = true
+			gui.Position = UDim2.new(0.5,-150,0.4,-15)
+		end)
+		
+		
+	end)
+	--   End Minimize Program   --
+	
+	--   Restore Program (NO DIOLOGUE)   --
+	gui.window.Show.MouseButton1Click:Connect(function()
+		--Tweak Box Size
+		gui.Round.Size = UDim2.new(1,0,2,0)
+		gui.Round.Position = UDim2.new(0.5,0,1,0)
+		gui.Size = UDim2.new(0,300,0,30)
+			
+		--Show Buttons
+		gui.window.Minimize.Visible = true
+		gui.window.Close.Visible = true
+		gui.window.Hide.Visible = true
+		gui.window.Show.Visible = false
+		
+		gui.Loader.Visible = true
+	end)
+	--   End Restore Program (NO DIOLOGUE)   --
+end
+coroutine.wrap(JDSL_fake_script)()
