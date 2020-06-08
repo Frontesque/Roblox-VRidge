@@ -187,7 +187,7 @@ ClientVersion.BackgroundTransparency = 1.000
 ClientVersion.Position = UDim2.new(0, 0, 0, 30)
 ClientVersion.Size = UDim2.new(1, 0, 0, 20)
 ClientVersion.Font = Enum.Font.SourceSans
-ClientVersion.Text = "RobloxVRidge Client Version:      a0.1.2"
+ClientVersion.Text = "RobloxVRidge Client Version:      a0.1.3"
 ClientVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
 ClientVersion.TextSize = 14.000
 
@@ -223,7 +223,7 @@ Author.BackgroundTransparency = 1.000
 Author.Position = UDim2.new(0, 0, 0, 100)
 Author.Size = UDim2.new(1, 0, 0, 20)
 Author.Font = Enum.Font.SourceSans
-Author.Text = "Author:      FrontlineMist57"
+Author.Text = "Discord:                  Front#8415"
 Author.TextColor3 = Color3.fromRGB(255, 255, 255)
 Author.TextSize = 14.000
 
@@ -348,7 +348,7 @@ Show.ImageColor3 = Color3.fromRGB(100, 255, 100)
 
 -- Scripts:
 
-local function TPXGGAE_fake_script() -- DiologueBox.DiologueBoxDrag 
+local function MYWA_fake_script() -- DiologueBox.DiologueBoxDrag 
 	local script = Instance.new('LocalScript', DiologueBox)
 
 	--   Drag Header   --
@@ -393,8 +393,8 @@ local function TPXGGAE_fake_script() -- DiologueBox.DiologueBoxDrag
 	end)
 	--   End Drag Header   --
 end
-coroutine.wrap(TPXGGAE_fake_script)()
-local function RBXWUF_fake_script() -- RobloxVRidge.Core 
+coroutine.wrap(MYWA_fake_script)()
+local function LNOHQK_fake_script() -- RobloxVRidge.Core 
 	local script = Instance.new('LocalScript', RobloxVRidge)
 
 	--   Drag Header   --
@@ -446,9 +446,32 @@ local function RBXWUF_fake_script() -- RobloxVRidge.Core
 		gui:WaitForChild("ConfigMenu").Visible = true
 	end)
 	--   End Pass Loader   --
+	
+	
+	
+	--   Enter VR Mode   --
+	gui.ConfigMenu.Execute.MouseButton1Click:Connect(function()
+		db.Position = UDim2.new(0.5,-150,0.45,-15)
+		gui.Visible = false
+		db.Content.TextLabel.Text = "This project isn't complete!\nBUT, YOU STILL HAVE HOPE!\nThis project is still under development.\nThis is the only project with this goal!\nJoin the discord to stay current on development"
+		db.Visible = true
+		
+		--Continue
+		db.Content.Confirm.MouseButton1Click:Connect(function()
+			db.Visible = false
+			gui.Visible = true
+		end)
+		db.Content.Cancel.MouseButton1Click:Connect(function()
+			db.Visible = false
+			gui.Visible = true
+		end)
+		
+		
+	end)
+	--   End Enter VR Mode   --
 end
-coroutine.wrap(RBXWUF_fake_script)()
-local function JDSL_fake_script() -- RobloxVRidge.DiologueCore 
+coroutine.wrap(LNOHQK_fake_script)()
+local function YBAJQDS_fake_script() -- RobloxVRidge.DiologueCore 
 	local script = Instance.new('LocalScript', RobloxVRidge)
 
 	local gui = script.Parent:WaitForChild("CoreWindow")
@@ -560,4 +583,4 @@ local function JDSL_fake_script() -- RobloxVRidge.DiologueCore
 	end)
 	--   End Restore Program (NO DIOLOGUE)   --
 end
-coroutine.wrap(JDSL_fake_script)()
+coroutine.wrap(YBAJQDS_fake_script)()
