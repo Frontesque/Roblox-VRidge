@@ -1,3 +1,17 @@
+--[[
+  _    _   ______  __     __  _ 
+ | |  | | |  ____| \ \   / / | |
+ | |__| | | |__     \ \_/ /  | |
+ |  __  | |  __|     \   /   | |
+ | |  | | | |____     | |    |_|
+ |_|  |_| |______|    |_|    (_)
+
+DO NOT TRY TO INJECT THIS SCRIPT WITH PROTO OR SYNAPSE!
+IT WILL NOT WORK! YOU NEED A DEDICATED INJECTOR TO PAIR WITH RIFTCAT FOR THIS TO WORK!
+
+]]--
+
+
 local RobloxVRidge = Instance.new("ScreenGui")
 local DiologueBox = Instance.new("TextLabel")
 local Content = Instance.new("Frame")
