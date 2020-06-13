@@ -362,7 +362,7 @@ Show.ImageColor3 = Color3.fromRGB(100, 255, 100)
 
 -- Scripts:
 
-local function MYWA_fake_script() -- DiologueBox.DiologueBoxDrag 
+local function BSCXPI_fake_script() -- DiologueBox.DiologueBoxDrag 
 	local script = Instance.new('LocalScript', DiologueBox)
 
 	--   Drag Header   --
@@ -407,10 +407,24 @@ local function MYWA_fake_script() -- DiologueBox.DiologueBoxDrag
 	end)
 	--   End Drag Header   --
 end
-coroutine.wrap(MYWA_fake_script)()
-local function LNOHQK_fake_script() -- RobloxVRidge.Core 
+coroutine.wrap(BSCXPI_fake_script)()
+local function KTPFU_fake_script() -- RobloxVRidge.Core 
 	local script = Instance.new('LocalScript', RobloxVRidge)
 
+	--   Startup    --
+	game.StarterGui:SetCore("SendNotification", {
+	       Title = "SWIFT Injection Core";
+	       Text = "SWIFT Has Been Injected";
+	})
+	game.StarterGui:SetCore("SendNotification", {
+	       Title = "SWIFT Injection Core";
+	       Text = "Roblox VRidge Plugin Injected";
+	})
+	game.StarterGui:SetCore("SendNotification", {
+	       Title = "SWIFT Injection Core";
+	       Text = "Enjoy Using SWIFT / Roblox VRidge :)";
+	})
+	
 	--   Drag Header   --
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -484,8 +498,8 @@ local function LNOHQK_fake_script() -- RobloxVRidge.Core
 	end)
 	--   End Enter VR Mode   --
 end
-coroutine.wrap(LNOHQK_fake_script)()
-local function YBAJQDS_fake_script() -- RobloxVRidge.DiologueCore 
+coroutine.wrap(KTPFU_fake_script)()
+local function CCGSQ_fake_script() -- RobloxVRidge.DiologueCore 
 	local script = Instance.new('LocalScript', RobloxVRidge)
 
 	local gui = script.Parent:WaitForChild("CoreWindow")
@@ -597,4 +611,11 @@ local function YBAJQDS_fake_script() -- RobloxVRidge.DiologueCore
 	end)
 	--   End Restore Program (NO DIOLOGUE)   --
 end
-coroutine.wrap(YBAJQDS_fake_script)()
+coroutine.wrap(CCGSQ_fake_script)()
+local function WFTERNJ_fake_script() -- RobloxVRidge.ELEVATED_Core 
+	local script = Instance.new('LocalScript', RobloxVRidge)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(WFTERNJ_fake_script)()
