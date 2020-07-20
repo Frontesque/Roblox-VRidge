@@ -1,0 +1,11 @@
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\RobloxVRidge Core.exe.config
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\RobloxVRidge Core.exe
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\RobloxVRidge Core.pdb
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge Core.csprojAssemblyReference.cache
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge_Core.Properties.Resources.resources
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge Core.csproj.GenerateResource.cache
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge Core.csproj.CoreCompileInputs.cache
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge Core.exe
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge Core.pdb
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge_Core.RobloxVRidgeCore.resources
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge_Core.OpeningWindow.resources
