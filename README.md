@@ -1,3 +1,5 @@
+[![Generic badge](https://img.shields.io/badge/Version-0.3.4-yellow)](https://github.com/FrontlineMist57/Roblox-VRidge/releases)
+
 # Roblox-VRidge
 A 'addon' to VRidge &amp; RiftCat to let you play Roblox in VR!
 
