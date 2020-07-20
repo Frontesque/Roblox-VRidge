@@ -30,10 +30,12 @@ namespace RobloxVRidge_Core
             //Start RiftCat
             System.Diagnostics.Process.Start(openFileDialog1.FileName);
 
+            //
+            
 
             //Link With VRidge API
-            controlSocket = new RequestSocket();
-            controlSocket.Connect("tcp://localhost:38219");
+            //controlSocket = new RequestSocket();
+            //controlSocket.Connect("tcp://localhost:38219");
 
 
         }

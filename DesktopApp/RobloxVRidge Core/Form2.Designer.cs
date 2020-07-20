@@ -54,7 +54,7 @@
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(550, 120);
             this.Name = "OpeningWindow";
-            this.Text = "Roblox VRidge - V0.3.2";
+            this.Text = "Roblox VRidge - V0.4.0";
             this.Load += new System.EventHandler(this.OpeningWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

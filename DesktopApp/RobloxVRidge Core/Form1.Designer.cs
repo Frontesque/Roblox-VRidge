@@ -114,6 +114,7 @@
             this.Text = "Roblox VRidge Core";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.CoreLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
