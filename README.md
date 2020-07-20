@@ -6,4 +6,4 @@ A 'addon' to VRidge &amp; RiftCat to let you play Roblox in VR!
 
 Join the Discord: https://discord.gg/ZdmSZJ5
 
-Download the latest debug build here: https://github.com/FrontlineMist57/Roblox-VRidge/files/4948519/Roblox-VRidge_Debug1.1.zip
+Download The Latest Build Here: https://github.com/FrontlineMist57/Roblox-VRidge/files/4948519/Roblox-VRidge_Debug1.1.zip
