@@ -2,6 +2,8 @@
 [![Generic badge](https://img.shields.io/badge/Stability-poor-red)](https://github.com/FrontlineMist57/Roblox-VRidge/tree/master/DesktopApp/RobloxVRidge%20Core)
 [![Generic badge](https://img.shields.io/badge/Progress-60%25-orange)](https://github.com/FrontlineMist57/Roblox-VRidge/tree/master/DesktopApp/RobloxVRidge%20Core)
 [![Generic badge](https://img.shields.io/badge/Discord-join-brightgreen)](https://discord.gg/ZdmSZJ5)
+[![Generic badge](https://img.shields.io/badge/license-MIT-green)](https://github.com/FrontlineMist57/Roblox-VRidge/blob/master/license.txt)
+
 
 # Roblox-VRidge
 A 'addon' to VRidge &amp; RiftCat to let you play Roblox in VR!
