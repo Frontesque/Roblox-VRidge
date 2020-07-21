@@ -9,3 +9,11 @@ D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxV
 D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge Core.pdb
 D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge_Core.RobloxVRidgeCore.resources
 D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge_Core.OpeningWindow.resources
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\AsyncIO.dll
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\NetMQ.dll
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\Newtonsoft.Json.dll
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\AsyncIO.pdb
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\NetMQ.pdb
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\NetMQ.xml
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\bin\Debug\Newtonsoft.Json.xml
+D:\Hacks\Roblox\RobloxVRidge\Source\injector\RobloxVRidge Core\obj\Debug\RobloxVRidge Core.csproj.CopyComplete

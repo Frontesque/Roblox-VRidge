@@ -56,6 +56,7 @@
             this.Name = "OpeningWindow";
             this.Text = "Roblox VRidge - V0.4.0";
             this.Load += new System.EventHandler(this.OpeningWindow_Load);
+            this.Shown += new System.EventHandler(this.OpeningWindow_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
