@@ -1,4 +1,4 @@
-[![Generic badge](https://img.shields.io/badge/Version-0.3.4-yellow)](https://github.com/FrontlineMist57/Roblox-VRidge/releases)
+[![Generic badge](https://img.shields.io/badge/Version-0.4.0-yellow)](https://github.com/FrontlineMist57/Roblox-VRidge/releases)
 [![Generic badge](https://img.shields.io/badge/Stability-poor-red)](https://github.com/FrontlineMist57/Roblox-VRidge/tree/master/DesktopApp/RobloxVRidge%20Core)
 [![Generic badge](https://img.shields.io/badge/Progress-40%25-orange)](https://github.com/FrontlineMist57/Roblox-VRidge/tree/master/DesktopApp/RobloxVRidge%20Core)
 [![Generic badge](https://img.shields.io/badge/Discord-join-brightgreen)](https://discord.gg/ZdmSZJ5)
