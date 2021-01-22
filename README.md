@@ -5,8 +5,8 @@
 [![Generic badge](https://img.shields.io/badge/license-MIT-green)](https://github.com/FrontlineMist57/Roblox-VRidge/blob/master/license.txt)
 
 
-#NOTICE:
-##This project is discontinued.
+## NOTICE:
+### This project is discontinued.
 
 # Roblox-VRidge
 A 'addon' to VRidge &amp; RiftCat to let you play Roblox in VR!
